@@ -2,7 +2,9 @@
 <resources>
 
     <string name="app_name">Xlate</string>
-    <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
+    <string name="text">Text</string>
+    <string name="binary">Binary</string>
+    <string name="decimal">Decimal</string>
 
 </resources>
