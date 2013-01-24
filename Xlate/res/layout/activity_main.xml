@@ -4,83 +4,47 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity" >
 
-        <TabHost
-            android:id="@android:id/tabhost"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" >
+    <RadioGroup
+        android:id="@+id/baseSelect"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
 
-            <HorizontalScrollView
-                android:id="@+id/horizontalScrollView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" >
+        <RadioButton
+            android:id="@+id/selectText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="convertText"
+            android:text="@string/text" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical" >
+        <RadioButton
+            android:id="@+id/selectBin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="convertBin"
+            android:text="@string/binary" />
 
-                    <TabWidget
-                        android:id="@android:id/tabs"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" >
-                    </TabWidget>
+        <RadioButton
+            android:id="@+id/selectDec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="convertDec"
+            android:text="@string/decimal" />
 
-                    <FrameLayout
-                        android:id="@android:id/tabcontent"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" >
+    </RadioGroup>
 
-                        <LinearLayout
-                            android:id="@+id/text"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" >
-                        </LinearLayout>
+    <EditText
+        android:id="@+id/textBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/baseSelect"
+        android:ems="10"
+        android:inputType="textMultiLine" >
 
-                        <LinearLayout
-                            android:id="@+id/Binary"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" >
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/tab3"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" >
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/octal"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" >
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/nexusTooWide"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" >
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/tryingToMakeScrool"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" >
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/ThisShouldBeEnough"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" >
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/LoremIpsumDorsetEtcEtcEtc"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" >
-                        </LinearLayout>
-                    </FrameLayout>
-                </LinearLayout>
-            </HorizontalScrollView>
-        </TabHost>
+        <requestFocus />
+    </EditText>
 
 </RelativeLayout>
