@@ -1,0 +1,4 @@
+2014-08-03 23:00, import project from http://code.google.com/p/xlate-android/
+2014-08-03 23:25, clone & testing project @ local computer
+2014-08-03 23:45, realize, this project unfinished, there's nothing can do
+2014-08-04 00:00, starting project milestones by my self
