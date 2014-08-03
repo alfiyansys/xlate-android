@@ -4,7 +4,7 @@ Xlate-Android is Android version port of [xlate converter]
 
 Project
 -------
-This project imported from unfinished [GordonClan's project], nothing works :(, and I decided to try finish this project by my self.
+This project originally imported from unfinished [GordonClan's project], nothing works :(, and I decided to try finish this project by my self.
 
 See [working log]
 
