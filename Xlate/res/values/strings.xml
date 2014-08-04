@@ -5,6 +5,8 @@
     <string name="menu_settings">Settings</string>
     <string name="text">Text</string>
     <string name="binary">Binary</string>
+    <string name="octal">Octal</string>
     <string name="decimal">Decimal</string>
+    <string name="hexa">HexaDecimal</string>
 
 </resources>

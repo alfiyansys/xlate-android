@@ -10,26 +10,40 @@
         android:layout_height="wrap_content" >
 
         <RadioButton
-            android:id="@+id/selectText"
+            android:id="@+id/select1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:onClick="convertText"
+            android:onClick="dataText"
             android:text="@string/text" />
 
         <RadioButton
-            android:id="@+id/selectBin"
+            android:id="@+id/select2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="convertBin"
+            android:onClick="dataBinary"
             android:text="@string/binary" />
+        
+        <RadioButton
+            android:id="@+id/select3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="dataOctal"
+            android:text="@string/octal" />
 
         <RadioButton
-            android:id="@+id/selectDec"
+            android:id="@+id/select4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="convertDec"
+            android:onClick="dataDecimal"
             android:text="@string/decimal" />
+        
+        <RadioButton
+            android:id="@+id/select5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="dataHexa"
+            android:text="@string/hexa" />
 
     </RadioGroup>
 
